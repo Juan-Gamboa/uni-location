@@ -1,9 +1,32 @@
-<ion-content>
+<ion-content >
   <div class="Header">
     <img src="./../assets/Logo-UdB.png" alt="" class="Logo">
     <h1>Universidad de Boyacá</h1>
-      <a class="Opciones" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <ion-button id="open-modal" expand="block" class="Opciones"><i class="fa fa-angle-right" aria-hidden="true"></i></ion-button>
   </div>
-  <ion-searchbar></ion-searchbar>
+  <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+    <ng-template>
+      <div class="wrapper">
+        <h1>Dialog header</h1>
+        <ion-list lines="none">
+          <ion-item button="true" detail="false" (click)="modal.dismiss()">
+            <ion-icon name="person-circle"></ion-icon>
+            <ion-label>Item 1</ion-label>
+          </ion-item>
+          <ion-item button="true" detail="false" (click)="modal.dismiss()">
+            <ion-icon name="person-circle"></ion-icon>
+            <ion-label>Item 2</ion-label>
+          </ion-item>
+          <ion-item button="true" detail="false" (click)="modal.dismiss()">
+            <ion-icon name="person-circle"></ion-icon>
+            <ion-label>Item 3</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ng-template>
+  </ion-modal>
+  <div class="Footer">
+  <ion-searchbar class="Buscador" placeholder="Buscar Salon"></ion-searchbar>
+  </div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </ion-content>
