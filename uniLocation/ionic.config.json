@@ -1,0 +1,7 @@
+{
+  "name": "uniLocation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
