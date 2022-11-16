@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<ion-content>
-  <div class="Header">
-    <img src="./../assets/Logo-UdB.png" alt="" class="Logo">
-    <h1>Universidad de Boyacá</h1>
-      <a class="Opciones" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-  </div>
-  <ion-searchbar></ion-searchbar>
-=======
+
 <ion-content >
   <div class="Header">
     <img src="./../assets/Logo-UdB.png" alt="" class="Logo">
@@ -18,9 +10,9 @@
       <div class="wrapper">
         <h1>Dialog header</h1>
         <ion-list lines="none">
-          <ion-item button="true" detail="false" (click)="modal.dismiss()">
+          <ion-item button="true" detail="false" [routerLink]="['/login']" (click)="modal.dismiss()">
             <ion-icon name="person-circle"></ion-icon>
-            <ion-label>Item 1</ion-label>
+            <ion-label>Login</ion-label>
           </ion-item>
           <ion-item button="true" detail="false" (click)="modal.dismiss()">
             <ion-icon name="person-circle"></ion-icon>
@@ -37,6 +29,5 @@
   <div class="Footer">
   <ion-searchbar class="Buscador" placeholder="Buscar Salon"></ion-searchbar>
   </div>
->>>>>>> 116b3a770a3bcaa4b34186505ebdec737c1e9aae
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </ion-content>
